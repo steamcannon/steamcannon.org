@@ -301,3 +301,20 @@ form {
     }
   }
 }
+
+.bp {
+  .bio {
+    @include column(14);
+    @include last;
+    margin-bottom: 2em;
+    .avatar {
+      @include column(4);
+      @include append(1);
+    }
+    .contact {
+      @include prepend(1);
+      @include column(8);
+      @include last;
+    }
+  }
+}
