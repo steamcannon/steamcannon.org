@@ -1,0 +1,35 @@
+---
+layout: base
+---
+
+#container
+  #header
+    .spacer-box
+      #logos
+        SteamCannon
+        %a{:href => 'http://jboss.org'}
+          %img#jbosscommunity-logo{:src => '/images/jbosscommunity-logo.png'}
+      %ul#top-nav
+        %li
+          %a{:href => '/'} Home
+        %li
+          %a{:href => '/news/'} News
+        %li
+          %a{:href => '/community/'} Community
+        %li
+          %a{:href => '/source_repository/'} Source Repository
+        %li
+          %a{:href => '/license'} License
+  #primary-container
+    - unless page.inhibit_title
+      %h1.page-title
+        - if page.section
+          %a{:href => "/#{page.section.downcase}/"} #{page.section}
+          \:
+        #{page.title}
+    #primary-content
+      ~ content
+  #footer
+    A member of the <a href="http://jboss.org/">JBoss Community</a>.
+    Copyright 2010 <a href="http://redhat.com/">Red Hat, Inc.</a>
+    SteamCannon is a trademark of Red Hat, Inc.

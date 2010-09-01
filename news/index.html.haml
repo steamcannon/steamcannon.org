@@ -1,0 +1,23 @@
+---
+title: News
+layout: default
+---
+#right-sidebar
+  #main-column
+    = page.posts.links
+    - for post in page.posts
+      .post
+        %h1.title
+          %a{:href => post.url }= post.title
+        .byline
+          .author
+            = post.author
+          .date
+            = post.date.strftime('%d %B %Y')
+        .body
+          = post.content
+        .tail
+          %a{:href => post.url} Add a comment
+    = page.posts.links
+  #sidebar-column
+    &nbsp;

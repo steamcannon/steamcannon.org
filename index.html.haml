@@ -1,0 +1,22 @@
+---
+title: Home
+layout: default
+inhibit_title: true
+---
+
+#front-page
+  #left-column
+    :markdown
+      SteamCannon makes it easy to stand up and manage a JaveEE PaaS.
+      It's written in Ruby, runs on top of TorqueBox, and uses Deltacloud
+      to target multiple cloud fabrics.
+  #right-column
+    #latest-news
+      %h1 Latest News
+      %h2
+        %a{:href => site.posts.first.url}= site.posts.first.title
+      %h3 #{site.posts.first.date.strftime('%d %B %Y')}
+      .body
+        #{summarize(html_to_text(site.posts.first.content), 30)}...
+      .tail
+        %a{:href => site.posts.first.url} Read more
