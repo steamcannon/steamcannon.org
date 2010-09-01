@@ -308,13 +308,23 @@ form {
     @include last;
     margin-bottom: 2em;
     .avatar {
-      @include column(4);
-      @include append(1);
+      @include column(3);
     }
     .contact {
-      @include prepend(1);
-      @include column(5);
+      @include column(8);
       @include last;
+      ul {
+        @include horizontal-list(3ex);
+        .label {
+          color: $team_account_color;
+          font-weight: bold;
+        }
+        a {
+          display: block;
+          text-decoration: none;
+          padding: 0px;
+        }
+      }
     }
   }
 }
