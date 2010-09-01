@@ -313,7 +313,7 @@ form {
     }
     .contact {
       @include prepend(1);
-      @include column(8);
+      @include column(5);
       @include last;
     }
   }
