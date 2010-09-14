@@ -21,6 +21,7 @@ body.bp {
   @include blueprint-utilities;
   @include blueprint-debug;
   @include blueprint-interaction;
+  background-color: $page_background_color;
 }
 
 form.bp {
@@ -28,9 +29,14 @@ form.bp {
 }
 
 body.bp {
-  margin-top: 1em;
+  padding-top: 1em;
+  font-family: 'Trebuchet MS',Verdana,sans-serif;
   #container {
+    padding: 2em;
+    padding-bottom: 1ex;
     @include container;
+    background-color: white;
+    border: 2px solid $page_background_color - #333;
   }
   #header, #footer, #primary-container {
     @include column($blueprint_grid_columns);
@@ -42,7 +48,7 @@ body.bp {
   margin-bottom: 2em;
   #logos {
     font-size: 300%;
-    margin-bottom: 1em;
+    margin-bottom: .5ex;
     #jbosscommunity-logo {
       width: 200px;
       float: right;
@@ -64,8 +70,8 @@ body.bp {
 #footer {
   font-size: 90%;
   margin-top: 2em;
-  margin-bottom: 2em;
   padding: 1ex;
+  padding-bottom: 0px;
   border-top: 2px solid $top_nav_border_color;
 }
 
@@ -146,6 +152,11 @@ body.bp {
     @include last;
   }
 }
+
+#main-column {
+  font-size: 110%;
+}
+
 
 #primary-container {
   h1.page-title {
