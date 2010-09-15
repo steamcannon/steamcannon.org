@@ -2,41 +2,86 @@
 layout: base
 ---
 
-#container
-  #header
-    .spacer-box
+#nav-wrapper
+  %ul#top-nav
+    %li
+      %a{ :href=>'/' } Home
+    %li
+      %a{ :href=>'/news/' } News
+    %li
+      %a{ :href=>'/download/' } Download
+    %li
+      %a{ :href=>'/community/' } Community
+    %li
+      %a{ :href=>'/development/' } Development
+    %li
+      %a{ :href=>'/license/' } License
+
+#header-bar
+  #header-wrapper
+    #header
       #logos
         %a{:href=>'/'}
-          %img{:src=>'/images/logo.png'}
-        %a{:href => 'http://jboss.org'}
-          %img#jbosscommunity-logo{:src => '/images/jbosscommunity-logo.png'}
-      %ul#top-nav
-        %li
-          %a{:href => '/'} Home
-        %li
-          %a{:href => '/news/'} News
-        %li
-          %a{:href => '/community/'} Community
-        %li
-          %a{:href => '/source_repository/'} Source Repository
-        %li
-          %a{:href => '/design/'} Design
-        %li
-          %a{:href => '/team'} Team
-        %li
-          %a{:href => '/license'} License
+          %img#torquebox-logo{ :src=>'/images/logo.png' }
+#primary-wrapper
   #primary-container
-    - unless page.inhibit_title
+    - unless page.inhibit_title 
       %h1.page-title
-        - if page.section
-          %a{:href => "/#{page.section.downcase}/"} #{page.section}
+        - if page.section 
+          %a{:href=>"/#{page.section.downcase}/"} #{page.section}
           \:
         #{page.title}
     #primary-content
       ~ content
-  #footer
-    A member of the <a href="http://jboss.org/">JBoss Community</a>.
-    Copyright 2010 <a href="http://redhat.com/">Red Hat, Inc.</a>
-    SteamCannon is a trademark of Red Hat, Inc.
-
-  = google_analytics
+#footer-bar
+  #footer-wrapper
+    #footer
+      #bottom-nav
+        #bottom-left
+          %h2 Download
+          %ul
+            %li
+              Coming Soon!
+          %h2 Learn
+          %ul
+            %li 
+              %a{:href=>'/news/'}
+                News
+            %li 
+              %a{:href=>'/license/'}
+                License
+        #bottom-center
+          %h2 Get Involved
+          %ul
+            %li 
+              %a{:href=>'/community/'}
+                Community
+            %li
+              %a{:href=>'/development/'}
+                Development 
+                %ul
+                  %li 
+                    %a{:href=>'/design/'}
+                      Design &amp; Architecture
+                  %li 
+                    %a{:href=>'/development/source_repository/'}
+                      Source Repository
+                  %li 
+                    %a{:href=>'/development/continuous_integration/'}
+                      Continuous Integration
+            %li 
+              %a{:href=>'/support/'}
+                Support
+      
+        #bottom-right
+          #legal
+            The TorqueBox project is a member of the 
+            <a href="http://jboss.org/">JBoss Community</a> and
+            produced by <a href="http://projectodd.org/">Project Odd</a>.
+            Copyright 2009-2010 <a href="http://redhat.com/">Red Hat, Inc.</a>
+            TorqueBox is a trademark of Red Hat, Inc.
+          #badges
+            %a{:href=>'http://jboss.org/'}
+              %img#jbosscommunity-logo{ :src=>'/images/jbosscommunity-logo.png' }
+            %a{:href=>'http://projectodd.org/'}
+              %img#projectodd-logo{ :src=>'/images/projectodd-logo.png' }
