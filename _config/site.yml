@@ -1,3 +1,4 @@
+skin_dir: ../site-skin
 profiles:
   development:
   production:
@@ -6,5 +7,6 @@ profiles:
       host: steamcannon.org
       path: /var/www/domains/steamcannon.org/www/htdocs
 
+title: SteamCannon
 intense_debate_acct: a9e7a0c66b1478d440fc1758c7a9ed0e
 google_analytics: UA-6435340-3
