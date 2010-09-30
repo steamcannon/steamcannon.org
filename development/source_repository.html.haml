@@ -25,4 +25,6 @@ title: Source Repository
       * `git://github.com/steamcannon/steamcannon-agent.git`
 
   #sidebar-column
-    &nbsp;
+    #latest-commits
+      %h1 Latest Commits
+      = rss_widget('github_activity', 'http://github.com/steamcannon/steamcannon/commits/master.atom', :limit => 8, :header => false, :content => false, :date => false)
