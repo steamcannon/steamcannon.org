@@ -1,0 +1,31 @@
+---
+layout: default
+title: Development
+---
+
+#right-sidebar
+  #main-column
+    :markdown
+      The development of SteamCannon is primarily sponsored by Red Hat, Inc.
+
+      The code is developed as open-source, with a publicly-accessible
+      [source-code repository](/development/source_repository/).
+
+      The code is continuously built using [continuous integration](/development/continuous_integration).
+
+      The team is lead by Ben Browning and is supported by the other members of [ProjectOdd](http://projectodd.org/).
+  #sidebar-column
+    #latest-jiras
+      %h1 Latest JIRA Activity
+      %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", :type => "text/javascript"}
+      %script{:src => "/scripts/jquery.zrssfeed.min.js", :type => "text/javascript"}
+      #jira_activity
+      :javascript
+        $(document).ready(function() {
+          $('#jira_activity').rssfeed('http://jira.jboss.org/plugins/servlet/streams?key=STEAM', {
+            limit: 5,
+            header: false,
+            content: false,
+            date: false
+          });
+        });
