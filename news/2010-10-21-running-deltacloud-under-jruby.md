@@ -16,23 +16,13 @@ Deltacloud up and running.
 [deltacloud]: http://deltacloud.org
 [jruby]: http://jruby.org
 
-# Build and Install the JRuby Deltacloud Gems
 
-Deltacloud hasn't made an official release of the JRuby-compatible
-gems yet, so first we need to download the sources and build them.
+# Install the Deltacloud Gem
 
-    $ git clone git://git.apache.org/deltacloud.git
-    $ cd deltacloud/server
-    $ jruby -S rake package
-    $ cd ../client
-    $ jruby -S rake package
+The latest deltacloud-core gem is compatible with JRuby so installing
+it is the same as any other gem.
 
-The latest Deltacloud gems are now built under server/pkg and
-client/pkg. Let's install the JRuby versions of each.
-
-    $ cd ../
-    $ jruby -S gem install server/pkg/deltacloud-core-*-java.gem
-    $ jruby -S gem install client/pkg/deltacloud-client-*-java.gem
+    $ jruby -S gem install deltacloud-core
 
 
 # Running Deltacloud From the Command-line
@@ -47,15 +37,9 @@ To test that everything worked, fire up the server with the mock driver.
     [2010-10-21 09:16:43] INFO  ruby 1.8.7 (2010-09-28) [java]
     [2010-10-21 09:16:43] INFO  WEBrick::HTTPServer#start: pid=5041 port=3001
 
-Now, in another terminal, connect with the command-line client and
-verify that it can talk to the server.
-
-    $ jruby -S deltacloudc -u "http://localhost:3001/api" realms index
-    us         | United States   | AVAIL |            GB
-    eu         | Europe          | AVAIL |            GB
-
 Fire up a web browser and point it at <http://localhost:3001/api> to
-test the web interface.
+make sure everything's working.
+
 
 # Running Deltacloud Within TorqueBox
 
@@ -69,7 +53,7 @@ TorqueBox's deploy directory.
     $ cat << EOF > $JBOSS_HOME/server/default/deploy/deltacloud-rack.yml
     ---
     application:
-      RACK_ROOT: $JRUBY_HOME/lib/ruby/gems/1.8/gems/deltacloud-core-0.0.8-java
+      RACK_ROOT: $JRUBY_HOME/lib/ruby/gems/1.8/gems/deltacloud-core-0.0.9-java
       RACK_ENV: production
     web:
       context: /deltacloud
@@ -77,6 +61,6 @@ TorqueBox's deploy directory.
       API_DRIVER: mock
     EOF
 
-Make sure `deltacloud-core-0.0.8` matches the version of the
+Make sure `deltacloud-core-0.0.9` matches the version of the
 deltacloud-core gem that's installed. Start TorqueBox and point a
 browser to <http://localhost:8080/deltacloud/api> to test things out.
