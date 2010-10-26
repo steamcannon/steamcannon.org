@@ -3,8 +3,25 @@ layout: default
 title: Documentation
 ---
 
-Formal documentation coming soon.
+# Getting Started
 
-Until then, we keep notes on our [JBoss Community wiki][wiki].
+The first beta release of SteamCannon only supports starting
+environments in Amazon EC2. Before continuing, ensure you have an
+[Amazon Web Services][aws] account with access to Amazon Elastic
+Compute Cloud (EC2), Amazon Simple Storage Service (S3), and Amazon
+Elastic Block Storage (EBS).
 
-[wiki]: http://community.jboss.org/en/steamcannon
+[aws]: http://aws.amazon.com
+
+## Launch the SteamCannon Appliance
+
+Launch an instance of the latest SteamCannon Appliance, ami-12345.
+
+If you're not sure how to do this, we've provided a [step-by-step
+guide][launching_appliance] showing you how to launch our appliance
+using the AWS Management Console.
+
+[launching_appliance]: launching_appliance
+
+## Deploy Your First Application
+

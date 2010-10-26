@@ -1,0 +1,34 @@
+---
+layout: default
+title: Launching the SteamCannon Appliance
+section: Documentation
+steps:
+  - login_to_aws.md
+  - select_ami.md
+  - launch_instance.md
+---
+
+%div
+  = steps(:template => 'template.html.haml', :path_prefix => 'launching_appliance', :steps => page.steps)
+
+%div
+  :markdown
+    Log in to the [AWS Management Console][aws_console] and launch the
+    latest SteamCannon Appliance, ami-12345.
+
+    [aws_console]: https://console.aws.amazon.com/ec2/home
+
+    * Log into AWS
+    * click Launch Instance
+    * click Community tab and find our AMI, click select
+    * 1 instance, any availability zone, at least m1.small
+    * use default kernal and ram disk, no user data needed
+    * give your instance a name if you like
+    * choose or create a key pair if you want to be able to SSH into the instance, not necessary for playing around
+    * create a new security group, leave it empty
+    * review details and launch instance
+    * click view instances, see new instance in your list
+    * go to security groups and add port 8080 to your SC appliance security group
+    * go to your instance details and copy it's public DNS
+    * go to http://public_dns:8080 in your browser
+    * it can take several minutes for the instance to boot and steamcannon to configure itself and come up, be patient
