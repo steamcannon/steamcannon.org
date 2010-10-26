@@ -1,0 +1,15 @@
+
+.steps {
+  .step {
+    border-bottom: 1px solid #dddddf;
+    margin-bottom: 20px;
+
+    .step_image {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      img {
+        border: 1px solid #dddddf;
+      }
+    }
+  }
+}

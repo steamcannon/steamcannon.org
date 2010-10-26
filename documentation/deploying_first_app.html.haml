@@ -1,0 +1,22 @@
+---
+layout: default
+title: Deploying Your First Application
+section: Documentation
+steps:
+  - register.md
+  - cloud_credentials.md
+  - new_environment.md
+  - select_platform.md
+  - new_artifact.md
+  - upload_artifact.md
+  - new_deployment.md
+  - create_deployment.md
+  - wait_for_environment_start.md
+  - link_to_application.md
+  - deployed_application.md
+---
+
+#two-column
+  #left-column
+    .steps
+      = steps(:template => 'template.html.haml', :path_prefix => 'deploying_first_app', :steps => page.steps)

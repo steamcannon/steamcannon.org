@@ -15,7 +15,7 @@ Elastic Block Storage (EBS).
 
 ## Launch the SteamCannon Appliance
 
-Launch an instance of the latest SteamCannon Appliance, ami-12345.
+Launch an instance of the latest SteamCannon Appliance, #{site.steamcannon_ami}.
 
 If you're not sure how to do this, we've provided a [step-by-step
 guide][launching_appliance] showing you how to launch our appliance
@@ -25,3 +25,7 @@ using the AWS Management Console.
 
 ## Deploy Your First Application
 
+Once your appliance is up an running, check out our guide to
+[deploying your first application][deploying_first_app].
+
+[deploying_first_app]: deploying_first_app
