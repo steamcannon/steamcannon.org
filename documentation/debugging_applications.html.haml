@@ -1,0 +1,18 @@
+---
+layout: default
+title: Debugging Applications Deployed on SteamCannon
+section: Documentation
+steps:
+  - deploy_application.md
+  - open_security_group.md
+  - copy_external_hostname.md
+  - setup_ide_remote_debugger.md
+  - set_breakpoint.md
+---
+
+#right-sidebar
+  #main-column
+    %p
+      The steps below are specific to Eclipse, but the concepts should transfer to other IDEs.
+    .steps
+      = steps(:template => 'template.html.haml', :path_prefix => 'debugging_applications', :steps => page.steps)
