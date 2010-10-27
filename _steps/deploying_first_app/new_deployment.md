@@ -2,4 +2,4 @@
 title: Create a New Deployment
 ---
 
-Click the Deploy Latest Version link.
+After the artifact uploads, click the Deploy Latest Version link.
