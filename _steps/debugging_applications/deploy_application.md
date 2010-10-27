@@ -2,8 +2,8 @@
 title: Deploy an Application to a Developer Instance
 ---
 
-If you don't already have an application deployed, following our guide
-to [deploying your first application][deploying]. Be sure to start an
+If you don't already have an application deployed, follow our guide to
+[deploying your first application][deploying]. Be sure to start an
 environment that uses the **Developer Instance platform**. This is the
 only platform that enables remote debugging.
 
