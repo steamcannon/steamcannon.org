@@ -1,6 +1,11 @@
 skin_dir: ../site-skin
 profiles:
   development:
+  staging:
+    base_url: http://staging.steamcannon.org
+    deploy:
+      host: steamcannon.org
+      path: /var/www/domains/steamcannon.org/staging/htdocs
   production:
     base_url: http://steamcannon.org
     deploy:
