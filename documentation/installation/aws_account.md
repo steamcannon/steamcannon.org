@@ -1,7 +1,9 @@
 ---
 layout: default
-title: 'Installation : Create an AWS Account'
-section: Documentation
+title: Create an AWS Account
+sections:
+  - Documentation
+  - Installation
 ---
 
 The first beta release of SteamCannon only supports starting

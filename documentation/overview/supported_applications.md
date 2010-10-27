@@ -1,5 +1,7 @@
 ---
 layout: default
-title: 'Overview : Supported Applications'
-section: Documentation
+title: Supported Applications
+sections:
+  - Documentation
+  - Overview
 ---

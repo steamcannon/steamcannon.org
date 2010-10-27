@@ -1,5 +1,7 @@
 ---
 layout: default
-title: 'Installation : VMware Appliance'
-section: Documentation
+title: VMware Appliance
+sections:
+  - Documentation
+  - Installation
 ---

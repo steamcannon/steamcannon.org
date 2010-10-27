@@ -1,5 +1,7 @@
 ---
 layout: default
-title: 'Overview : Concepts'
-section: Documentation
+title: Concepts
+sections:
+  - Documentation
+  - Overview
 ---
