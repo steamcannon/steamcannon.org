@@ -7,4 +7,4 @@ If you don't already have an application deployed, follow our guide to
 environment that uses the **Developer Instance platform**. This is the
 only platform that enables remote debugging.
 
-[deploying]: /documentation/deploying_first_app
+[deploying]: /documentation/getting_started/deploying_first_app
