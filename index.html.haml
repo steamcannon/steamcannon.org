@@ -60,6 +60,7 @@ inhibit_title: true
       %p
         Currently, registration is limited, but you may request an invitation.
         Invitations are being sent out continuously.
+
     #recent-news
       %h2 Recent news
       - unofficial_posts = site.posts.reject{|e|e.official}
@@ -73,3 +74,18 @@ inhibit_title: true
           .link
             %a{:href=>post.url}
               Read more
+  #partners
+    %table
+      %tr
+        %td
+          %a{:href=>'http://jboss.org/jbossas/'}
+            %img.jboss{:src=>'/images/jboss.png'}
+        %td
+          %a{:href=>'http://www.jboss.org/boxgrinder.html'}
+            %img.boxgrinder{:src=>'/images/boxgrinder.png'}
+        %td
+          %a{:href=>'http://torquebox.org'}
+            %img.torquebox{:src=>'/images/torquebox.png'}
+        %td
+          %a{:href=>'http://rubyonrails.org/'}
+            %img.rails{:src=>'/images/rails.png'}

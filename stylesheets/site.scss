@@ -89,4 +89,30 @@
       }
     }
   }
+  #partners {
+    @include prepend(2);
+    @include column(20);
+    @include append(2);
+    @include last();
+
+    margin-top: 2em;
+    table {
+      width: 100%;
+      td {
+        vertical-align: middle;
+      }
+    }
+    img.jboss {
+      width: 150px;
+    }
+    img.boxgrinder {
+      width: 240px;
+    }
+    img.torquebox {
+      width: 200px;
+    }
+    img.rails {
+      height: 100px;
+    }
+  }
 }
