@@ -1,6 +1,38 @@
 
 @import 'blueprint';
 
+#try-links {
+  float: right;
+  width: 340px;
+  margin-bottom: 1em;
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-color: #C28600;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1ex;
+  .title {
+    color: #C28600;
+    font-weight: bold;
+    font-size: 140%;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+  .headline {
+    font-weight: bold;
+  }
+  .details {
+    font-size: 95%;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  
+}
+
 #custom-front-page {
   ul {
     padding-left: 1.5em;
