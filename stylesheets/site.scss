@@ -45,16 +45,28 @@
  
   #bottom-row {
     #getting-started {
-      @include column(8);
-    }
-
-    #try-steamcannon {
-      @include column(8);
+      @include column(10);
+      @include append(2);
     }
 
     #recent-news {
-      @include column(8);
+      @include prepend(2);
+      @include column(10);
       @include last();
+      .post {
+        font-size: 90%;
+        padding-bottom: 1ex;
+        .title {
+          font-weight: bold;
+          margin-bottom: .5ex;
+        }
+        .abstract {
+          line-height: 1.2em;
+        }
+        .link {
+          text-align: right;
+        }
+      }
     }
   }
 }

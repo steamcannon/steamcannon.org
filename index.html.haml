@@ -47,7 +47,6 @@ inhibit_title: true
         %li
           %a{:href=>'/documentation/getting_started/deploying_first_app/'}
             Deploy your first application
-    #try-steamcannon
       %h2 Try SteamCannon!
 
       %p
@@ -57,6 +56,15 @@ inhibit_title: true
       %p
         Currently, registration is limited, but you may request an invitation.
         Invitations are being sent out continuously.
-
     #recent-news
       %h2 Recent news
+      - for post in site.posts[0,4]
+        .post
+          .title
+            %a{:href=>post.url}
+              = post.title
+          .abstract
+            #{post.content.gsub( /<[^>]+>/, '' ).split( ' ' )[0,30].join( ' ' )}...
+          .link
+            %a{:href=>post.url}
+              Read more
