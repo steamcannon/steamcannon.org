@@ -39,6 +39,10 @@
     #latest-release {
       @include column(8);
       @include last();
+      .box {
+        font-size: 90%;
+        border: 1px solid #999;
+      }
 
     }
   }

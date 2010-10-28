@@ -5,9 +5,9 @@ inhibit_title: true
 ---
 
 #custom-front-page
+  %h1 What is SteamCannon?
   #top-row
     #what-is-steamcannon
-      %h1 What is SteamCannon?
 
       %p
         SteamCannon is the cloud-aware PaaS broker that sits
@@ -21,21 +21,22 @@ inhibit_title: true
 
       %img{:src=>'/images/tryfront.png'}
     #latest-release
-      %h2 First beta available now!
-
-      %p
-        The first beta release of SteamCannon is now available.
-
-      %p 
-        The project is open-source, and source is available.  Additionally,
-        this release includes downloading virtual machines, an AMI registered
-        at EC2, and a hosted service.
-
-      %ul
-        %li
-          %a{:href=>''} General release announcement
-        %li
-          %a{:href=>''} Hosted try.steamcannon.org announcement
+      .box
+        %h2 First beta available now!
+  
+        %p
+          The first beta release of SteamCannon is now available.
+  
+        %p 
+          The project is open-source, and source is available.  Additionally,
+          this release includes downloading virtual machines, an AMI registered
+          at EC2, and a hosted service.
+  
+        %ul
+          %li
+            %a{:href=>''} General release announcement
+          %li
+            %a{:href=>''} Hosted try.steamcannon.org announcement
     %div{:style=>'clear:both;'}
   #bottom-row
     #getting-started
