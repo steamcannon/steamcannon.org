@@ -1,6 +1,6 @@
 ---
 layout: documentation
-title: Supported Applications
+title: Technology
 sections:
   - Documentation
   - Overview
