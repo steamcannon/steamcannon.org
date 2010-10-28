@@ -2,6 +2,6 @@
 title: Select AMI
 ---
 
-* click Launch Instance
-* click Community tab and find our AMI, click select
-* #{current_ami}
+Click the Community AMIs tab and search for the latest SteamCannon
+appliance - **#{current_ami}**. Once you find it click the Select button
+on the right side.

@@ -1,5 +1,7 @@
 ---
-title: Open Security Group
+title: Open Port 8080 in Security Group
 ---
 
-* go to security groups and add port 8080 to your SC appliance security group
+Close any open dialogs and go to the Security Groups page under the
+Networking & Security header. Find your new steamcannon_appliance
+security group and open port tcp port 8080.
