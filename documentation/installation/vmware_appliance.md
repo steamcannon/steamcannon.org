@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: documentation
 title: VMware Appliance
 sections:
   - Documentation

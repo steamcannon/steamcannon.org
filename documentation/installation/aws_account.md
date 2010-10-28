@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: documentation
 title: Create an AWS Account
 sections:
   - Documentation

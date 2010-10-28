@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: documentation
 title: Deploying Your First Application
 sections:
   - Documentation
@@ -18,7 +18,5 @@ steps:
   - deployed_application.md
 ---
 
-#right-sidebar
-  #main-column
-    .steps
-      = steps(:template => 'template.html.haml', :path_prefix => 'deploying_first_app', :steps => page.steps)
+.steps
+  = steps(:template => 'template.html.haml', :path_prefix => 'deploying_first_app', :steps => page.steps)

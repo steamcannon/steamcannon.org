@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: documentation
 title: Getting Started
 section: Documentation
 ---
