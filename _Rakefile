@@ -1,0 +1,59 @@
+
+desc "Check site for broken links"
+task :check_links do
+  BrokenLinkChecker.new('_site')
+end
+
+
+require 'pathname'
+
+class BrokenLinkChecker
+
+  def initialize(path)
+    puts "Checking files in #{path} for broken links"
+    @path = path
+    @all_files = Dir.glob("#{@path}/**/*")
+    html_files = Dir.glob("#{@path}/**/*.html")
+    broken = html_files.inject({}) do |hash, file|
+      broken_in_file = find_broken_links(file).uniq
+      hash[file] = broken_in_file unless broken_in_file.empty?
+      hash
+    end
+    puts "No broken links found" if broken.empty?
+    broken.keys.each do |file|
+      puts "#{file} has broken links #{broken[file].inspect}"
+    end
+  end
+
+  protected
+
+  def find_broken_links(file)
+    page = File.read(file)
+    links = page.scan(/href=(['"])(.+?)\1/).map(&:last)
+    links.map do |link|
+      if excluded?(link) || absolute_path?(link) || exists?(link, file)
+        nil
+      else
+        link
+      end
+    end.compact
+  end
+
+  def excluded?(link)
+    link =~ /^'\+(feeds|entry)\.link\+'$/
+  end
+
+  def absolute_path?(link)
+    link =~ /^(https?|ftp|irc):/
+  end
+
+  def exists?(link, file)
+    unless absolute_path?(link) || link =~ /^\//
+      puts "WARNING: #{file} has a relative link to #{link}"
+    end
+    @all_files.include?("#{@path}#{link}") ||
+      @all_files.include?("#{@path}#{link}index.html") ||
+      @all_files.include?("#{@path}#{link}/index.html")
+  end
+
+end
