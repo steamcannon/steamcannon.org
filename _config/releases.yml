@@ -1,0 +1,10 @@
+- version: 1.0.0.Beta1
+  ami: ami-a66f9bcf
+  urls:
+    dist:
+      vmware: http://google.com
+      zip: http://google.com
+    github:
+      log: asdf
+      tree: http://github.com/steamcannon/steamcannon
+    jira: http://asdf

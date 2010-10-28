@@ -1,0 +1,45 @@
+---
+layout: default
+title: Download
+---
+
+%h3
+  Feel Free to
+  %a{:href => 'https://try.steamcannon.org'} Try SteamCannon
+  Before Downloading
+
+#download-table
+  %table.downloads
+    %tr
+      %th Version
+      %th Amazon AMI
+      %th Binary Distribution
+      %th Changelog
+      %th Git Tree
+    - site.releases.each do |release|
+      %tr
+        %td
+          .version
+            = release.version
+          - announcement = announcement_for_version(release.version)
+          - if announcement
+            .announcement
+              %a{:href => announcement.url} Release announcement
+            .release-date
+              = announcement.date.strftime("%d %b %Y")
+        %td
+          = release.ami
+        %td
+          %ul
+            %li
+              %a{:href => release.urls.dist.vmware} VMware Appliance
+            %li
+              %a{:href => release.urls.dist.zip} ZIP Archive
+        %td
+          %ul
+            %li
+              %a{:href => release.urls.jira} JIRA Issues
+            %li
+              %a{:href => release.urls.github.log} Git Log
+        %td
+          %a{:href => release.urls.github.tree} Browse
