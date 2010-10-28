@@ -1,15 +1,26 @@
 
-.steps {
-  .step {
-    border-bottom: 1px solid #dddddf;
-    margin-bottom: 20px;
+#primary-container .step {
+  font-size: 110%;
+  border-bottom: 1px solid #dddddf;
+  margin-bottom: 3em;
 
-    .step_image {
-      margin-top: 20px;
-      margin-bottom: 20px;
-      img {
-        border: 1px solid #dddddf;
-      }
+  h2 {
+    font-weight: bold;
+    font-size: 160%;
+  }
+
+  p {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-left: 12px solid #999;
+    padding: 1em;
+  }
+
+  .step_image {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    img {
+      border: 1px solid #dddddf;
     }
   }
 }
