@@ -3,8 +3,15 @@
 
 #custom-front-page {
   ul {
-    list-style-type: square;
     padding-left: 1.5em;
+    font-size: 110%;
+    font-weight: bold;
+    a {
+      color: #C28600 - #222;
+    }
+    li {
+      margin-bottom: 1ex;
+    }
   }
 
   h1 {
@@ -39,6 +46,15 @@
     #latest-release {
       @include column(8);
       @include last();
+      h3 {
+        font-size: 130%;
+        margin: 0;
+        color: #C28600 - #333;
+      }
+      h4 {
+        font-size: 110%;
+        color: #C28600 - #333;
+      }
       .box {
         font-size: 90%;
         border: 1px solid #999;
