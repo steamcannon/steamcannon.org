@@ -1,5 +1,5 @@
 ---
-layout: documentation
+layout: default
 title: Concepts
 sections:
   - Documentation
