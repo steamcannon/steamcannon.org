@@ -61,10 +61,30 @@ inhibit_title: true
         Currently, registration is limited, but you may request an invitation.
         Invitations are being sent out continuously.
 
+      %h2 Send us feedback
+
+      %p
+        There's several ways to get in touch with the teach behind SteamCannon.
+        For general questions in setting up your own SteamCannon, or advice
+        on using any flavor of SteamCannon, we highly recommend  the user mailing
+        list.  For real-time assistance, IRC is your best bet.  For general bugs
+        and feature requests, please use JIRA.
+
+      %ul 
+        %li 
+          %a{:href=>'/community/mailing_lists/'}
+            The <b>user</b> mailing list
+        %li 
+          %a{:href=>'irc://irc.freenode.net/steamcannon'}
+            IRC (real-time live chat)
+        %li 
+          %a{:href=>'https://jira.jboss.org/browse/STEAM#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel'}
+            JIRA (bug reports, feature requests)
+
     #recent-news
       %h2 Recent news
       - unofficial_posts = site.posts.reject{|e|e.official}
-      - for post in unofficial_posts[0,4]
+      - for post in unofficial_posts[0,5]
         .post
           .title
             %a{:href=>post.url}
