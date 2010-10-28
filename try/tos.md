@@ -7,7 +7,7 @@ title: Terms of Service
 
 The *try.steamcannon.org* service (henceforth and forevermore referred to
 as the "Service") is offered on an as-is basis.  It's beta software.  It's
-beta open-source software.  Hosted by the developers, not crack team of
+beta open-source software.  Hosted by the developers, not a crack team of
 dedicated admins who rub down the machines thrice daily with sake.
 
 *There will be downtime*.  Chances are, there will be a lot of downtime.
@@ -17,11 +17,11 @@ match reality.  This sort of thing happens.
 We'll do our best to keep things sane and happy, we really will.  We want
 you to have a great experience.  But we simply cannot (and will not) be
 responsible if you decide to leverage this demonstration service for
-anything that actually costs your dollars or lives. That's just not a good
+anything that actually costs you dollars or lives. That's just not a good
 idea.
 
 Given that, The Service is offered and guaranteed exactly as it performs
-during usage.  No guaranteed about expected performance, function or
+during usage.  No guarantee about expected performance, function or
 operation is implied or directly stated.  It does what it does.
 
 # Responsibility for charges
@@ -57,7 +57,7 @@ The Service is a shared web portal, which is intended to be used
 by humans.  Do not target the Service with malicious or misbehaved
 automated scripts, daemons or bots.
 
-If you need to scrape the occasional page, be reasonable.  Even
+If you need to scrape the occasional page, be reasonable.  It's even
 better if you ask for an API.  That'd be nice.
 
 
