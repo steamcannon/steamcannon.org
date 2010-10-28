@@ -4,6 +4,7 @@ author: Ben Browning
 layout: release
 version: 1.0.0.Beta1
 sequence: 11
+official: true
 ---
 
 We're proud to announce the first release of SteamCannon, 1.0.0.Beta1!

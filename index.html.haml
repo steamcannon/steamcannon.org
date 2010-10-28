@@ -58,7 +58,8 @@ inhibit_title: true
         Invitations are being sent out continuously.
     #recent-news
       %h2 Recent news
-      - for post in site.posts[0,4]
+      - unofficial_posts = site.posts.reject{|e|e.official}
+      - for post in unofficial_posts[0,4]
         .post
           .title
             %a{:href=>post.url}
