@@ -1,9 +1,9 @@
 ---
 layout: documentation
-title: Create an AWS Account
+title: Creating an AWS Account
 sections:
   - Documentation
-  - Installation
+  - Getting Started
 ---
 
 The first beta release of SteamCannon only supports starting
