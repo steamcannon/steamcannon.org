@@ -42,7 +42,7 @@ lists](/community/mailing_lists/) or [IRC channel](/community/) and
 we'll help you work through them.
 
 If you'd like to see all the hard work that went into this release,
-check out or [JIRA][jira] or [Git][git] logs.
+check out our [JIRA][jira] or [Git][git] logs.
 
 [jira]: #{release_for_version(page.version).urls.jira}
 [git]: #{release_for_version(page.version).urls.github.log}
