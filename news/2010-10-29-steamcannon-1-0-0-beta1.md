@@ -7,6 +7,18 @@ sequence: 2
 official: true
 ---
 
+The SteamCannon team is pleased to announce the first beta release of
+the SteamCannon software.
+
+SteamCannon is a cloud broker which aims to simplify deployment of
+your own platform environments, also knows as Platforms-as-a-Service,
+or PaaS.
+
+SteamCannon sits between a developer or administrator, and an Infrastructure-as-a-Service 
+(IaaS) provider, such as Amazon EC2.  SteamCannon helps turn undifferentiated
+slices of computing resources into higher-order platforms, such as multi-tier 
+platforms for Java and Ruby applications.
+
 We're proud to announce the first release of SteamCannon, 1.0.0.Beta1!
 Grab the Amazon AMI, VMware appliance, or .zip bundle from our
 [download](/download) page.
