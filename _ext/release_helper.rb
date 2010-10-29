@@ -8,8 +8,12 @@ module ReleaseHelper
     site.posts.find { |p| p.layout == 'release' && p.version == version }
   end
 
+  def latest_release
+    site.releases.first
+  end
+
   def current_ami
-    site.releases.first.ami
+      latest_release.ami
   end
 
 end
