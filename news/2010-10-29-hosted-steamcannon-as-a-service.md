@@ -2,7 +2,7 @@
 title: Hosted SteamCannon-as-a-Service
 author: Ben Browning
 layout: news
-sequence: 2
+sequence: 3
 official: true
 ---
 
