@@ -2,8 +2,8 @@
   ami: ami-a66f9bcf
   urls:
     dist:
-      vmware: http://google.com
-      zip: http://google.com
+      vmware: http://dist.steamcannon.org/
+      zip: http://dist.steamcannon.org/steamcannon-1.0.0.beta1.zip
     github:
       log: http://github.com/steamcannon/steamcannon/commits/1.0.0.beta1
       tree: http://github.com/steamcannon/steamcannon/tree/1.0.0.beta1
