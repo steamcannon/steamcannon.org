@@ -1,5 +1,5 @@
 - version: 1.0.0.Beta1
-  ami: ami-a66f9bcf
+  ami: ami-2ebe4947
   urls:
     dist:
       vmware: http://dist.steamcannon.org/
