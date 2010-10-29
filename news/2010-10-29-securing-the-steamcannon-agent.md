@@ -12,13 +12,13 @@ instance (JBoss AS, PostgreSQL, etc). Since these instances can be
 running in different cloud provider accounts than the SteamCannon
 instance, this agent has to be exposed to the internet at large.
 
-We had three three security issues with the SteamCannon <--> agent
+We had three security issues with the SteamCannon <--> agent
 communication that we needed to solve:
 
 1. All communication between SteamCannon and the agent needs to be
    encrypted.
-2. SteamCannon needs to know that the agent is talking to is one that
-   it actually launched.
+2. SteamCannon needs to know that the agent it is talking to is one
+   that it actually launched.
 3. The agent needs to know that the SteamCannon that is issuing it
    commands is the one that launched it.
 
