@@ -12,9 +12,10 @@ sequence: 4
 [steamcannon-appliances]: http://github.com/steamcannon/steamcannon-appliances
 [appliance definitions]: http://github.com/steamcannon/steamcannon-appliances/tree/1.0.0.beta1/appliances
 [steamcannon-meta.appl]: http://github.com/steamcannon/steamcannon-appliances/blob/1.0.0.beta1/appliances/steamcannon-meta.appl
+[Marek Goldmann]: http://github.com/goldmann
 
 SteamCannon simplifies the deployment of PaaS environments by making pre-rolled machine images 
-and deployment platforms - built with [BoxGrinder][] - available for your J2EE and Rails applications.  Together, a set of one
+and deployment platforms - built with [BoxGrinder][] - available for your JEE and Rails applications.  Together, a set of one
 or more of these images is known as an Environment in SteamCannon. An environment is a discrete, 
 named instance of a PaaS, encapsulating your database, application server(s), load balancers and other services 
 required by your applications.  When setting up a new environment in SteamCannon you'll be able to choose from 
@@ -47,7 +48,7 @@ nothing more than launching an Amazon AMI. In fact, this is how we deploy SteamC
 
 As machine images go, SteamCannon's is fairly straightforward. In the [SteamCannon appliance definition][] file we've specified
 Fedora 13 as the base operating system, a 5GB root partition, a couple gigs of RAM, and a basic set of RPMs, including SteamCannon
-itself, PostgreSQL and [DeltaCloud](http://deltacloud.org/). In the post section, which is run when the machine image is launched,
+itself, PostgreSQL and [Deltacloud](http://deltacloud.org/). In the post section, which is run when the machine image is launched,
 we configure the database, add some swap space, and initialize SteamCannon.  This simple file makes it possible for us to produce
 a fully functional SteamCannon deployment with a single BoxGrinder command.
 
@@ -61,9 +62,9 @@ SteamCannon platform, [steamcannon-meta.appl][].  It's turtles all the way down.
 
 ## Where to Learn More
 
-If you're interested in learning more about BoxGrinder, head on over to the [BoxGrinder] pages on JBoss.org.  Marek Goldmann
-who heads up that project has produced lots of good documentation.  To learn more about how SteamCannon uses BoxGrinder, check
-out the [steamcannon-appliances][] repository on GitHub.
+If you're interested in learning more about BoxGrinder, head on over to the [BoxGrinder][] pages on JBoss.org.
+[Marek Goldmann][] who heads up that project has produced lots of good documentation. To learn more about how
+SteamCannon uses BoxGrinder, check out the [steamcannon-appliances][] repository on GitHub.
 
 Finally, join our mailing lists and read our forums.
 
