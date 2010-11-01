@@ -93,7 +93,7 @@
 
     }
   }
- 
+   
   #bottom-row {
     #getting-started {
       @include column(10);
@@ -146,4 +146,12 @@
       height: 100px;
     }
   }
+}
+
+.post {
+  img {
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px dotted #ccc;
+  }    
 }
