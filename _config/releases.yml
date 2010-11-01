@@ -2,7 +2,7 @@
   ami: ami-2ebe4947
   urls:
     dist:
-      vmware: http://dist.steamcannon.org/steamcannon-1.1.0.10-fedora-13-i686-vmware.tgz
+      vmware: http://dist.steamcannon.org/steamcannon-1.0.0.beta1-fedora-13-i686-vmware.tgz
       zip: http://dist.steamcannon.org/steamcannon-1.0.0.beta1.zip
     github:
       log: http://github.com/steamcannon/steamcannon/commits/1.0.0.beta1
