@@ -6,25 +6,32 @@ sections:
   - Overview
 ---
 
-# Platform-as-a-Service
+# What is SteamCannon?
 
-SteamCannon is a JavaEE Platform-as-a-Service (PaaS). It provides a
-consistent platform for your applications regardless of the underlying
-public or private cloud. Your applications are deployed on
-best-of-breed technologies - [mod_cluster], [JBoss AS], and [PostgreSQL]
-- with unrestricted access to all Java APIs.
+SteamCannon is a JavaEE and Ruby Platform-as-a-Service (PaaS). It
+provides a consistent platform for your applications regardless of the
+underlying public or private cloud. Your applications are deployed on
+best-of-breed technologies - [mod_cluster], [JBoss AS] w/ [TorqueBox], and
+[PostgreSQL] - with unrestricted access to all APIs.
 
 [mod_cluster]: http://www.jboss.org/mod_cluster
 [jboss as]: http://www.jboss.org/jbossas/
+[torquebox]: http://torquebox.org
 [postgresql]: http://www.postgresql.org/
+
+The user-facing portion of SteamCannon is a Rails application that can
+be run locally or in the cloud. It's used to start, stop, and
+configure the environments that applications are deployed to.
+
 
 # Terminology
 
 ## Artifact
 
-An artifact is a deployable file. In Beta1, SteamCannon only allows
-deploying artifacts to the JBoss AS service so examples of valid
-artifacts would be war files, ear files, jar files, and datasources.
+An artifact is a deployable file. Examples of valid Java artifacts
+would be war files, ear files, jar files, and datasources. Valid Ruby
+artifacts would be .rails archives, *-rack.yml deployment descriptors,
+or any other type supported by TorqueBox.
 
 ## Service
 
