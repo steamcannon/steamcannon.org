@@ -10,10 +10,10 @@ Videos are now up from the [JBoss Developer Webinar on BoxGrinder and SteamCanno
 
 # Full Webinar Recording
 
-<iframe src="http://player.vimeo.com/video/16483020" width="640" height="480" frameborder="0"></iframe>
+<iframe src="http://player.vimeo.com/video/16483020" width="550" height="375" frameborder="0"></iframe>
 <br />
 <br />
 
 # SteamCannon Demo
 
-<iframe src="http://player.vimeo.com/video/16485051" width="640" height="480" frameborder="0"></iframe>
+<iframe src="http://player.vimeo.com/video/16485051" width="550" height="375" frameborder="0"></iframe>
