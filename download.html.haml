@@ -12,7 +12,7 @@ title: Download
   %table.downloads
     %tr
       %th Version
-      %th Amazon AMI
+      %th Amazon AMIs
       %th Binary Distribution
       %th Changelog
       %th Git Tree
@@ -28,7 +28,11 @@ title: Download
             .release-date
               = announcement.date.strftime("%d %b %Y")
         %td
-          = release.ami
+          %ul
+            - release.amis.each do |ami|
+              %li
+                == #{ami.ami_id} (#{ami.region})
+
         %td
           %ul
             %li

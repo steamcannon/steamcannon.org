@@ -3,17 +3,18 @@
   font-size: 110%;
   border-bottom: 1px solid #dddddf;
   margin-bottom: 3em;
+  padding-bottom: 1em;
 
   h2 {
     font-weight: bold;
     font-size: 160%;
   }
 
-  p {
+  .step_text {
     width: 500px;
     border: 1px solid #ccc;
     border-left: 12px solid #999;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
   }
 
   .step_image {

@@ -1,5 +1,7 @@
 - version: 1.0.0.Beta1
-  ami: ami-2ebe4947
+  amis: 
+    - ami_id: ami-2ebe4947
+      region: us-east
   urls:
     dist:
       vmware: http://dist.steamcannon.org/steamcannon-1.0.0.beta1-fedora-13-i686-vmware.tgz

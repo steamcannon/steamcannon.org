@@ -12,8 +12,8 @@ module ReleaseHelper
     site.releases.first
   end
 
-  def current_ami
-      latest_release.ami
+  def current_amis
+      latest_release.amis
   end
 
 end

@@ -1,0 +1,15 @@
+---
+title: Select AMI
+---
+%p
+  Click the Community AMIs tab and search for the latest SteamCannon
+  appliance. The AMIs are region specific, with the following AMIs
+  currently available:
+
+%ul
+  - current_amis.each do |ami|
+    %li
+      == #{ami.ami_id} (#{ami.region})
+%p
+  Once you find it click the Select button
+  on the right side.
