@@ -1,0 +1,20 @@
+---
+layout: default
+title: VMware Appliance
+sections:
+  - Documentation
+  - Getting Started
+steps:
+  - download_appliance.md
+  - open_vmx.md
+  - open_vmdk.md
+  - login.md
+  - register.md
+---
+
+%p
+  These steps were written with VMware Fusion but the process should be
+  similar for other VMware products.
+
+%div
+  = steps(:template => 'template.html.haml', :path_prefix => 'vmware_appliance', :steps => page.steps)
