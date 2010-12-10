@@ -33,7 +33,11 @@ layout: default
         Release: #{release.version}
       %ul
         %li
-          Amazon #{release.ami}
+          Amazon AMIs
+          %br
+          - release.amis.each do |ami|
+            #{ami.ami_id} (#{ami.region})
+            %br
         %li
           %a{:href => release.urls.dist.vmware} Download VMware Appliance
         %li
