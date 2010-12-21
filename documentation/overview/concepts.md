@@ -11,8 +11,8 @@ sections:
 SteamCannon is a JavaEE and Ruby Platform-as-a-Service (PaaS). It
 provides a consistent platform for your applications regardless of the
 underlying public or private cloud. Your applications are deployed on
-best-of-breed technologies - [mod_cluster], [JBoss AS] w/ [TorqueBox], and
-[PostgreSQL] - with unrestricted access to all APIs.
+[mod_cluster], [JBoss AS] w/ [TorqueBox], and [PostgreSQL] - with
+unrestricted access to all APIs.
 
 [mod_cluster]: http://www.jboss.org/mod_cluster
 [jboss as]: http://www.jboss.org/jbossas/
