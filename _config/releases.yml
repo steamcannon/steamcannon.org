@@ -2,6 +2,7 @@
   amis: 
     - ami_id: ami-6ea25307
       region: us-east
+  urls:
     dist:
       vmware: http://dist.steamcannon.org/steamcannon-0.2.0-vmware.tgz
       zip: http://dist.steamcannon.org/steamcannon-0.2.0.zip
