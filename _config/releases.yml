@@ -1,8 +1,7 @@
 - version: 0.2.0
-  amis:
+  amis: 
     - ami_id: ami-6ea25307
       region: us-east
-  urls:
     dist:
       vmware: http://dist.steamcannon.org/steamcannon-0.2.0-vmware.tgz
       zip: http://dist.steamcannon.org/steamcannon-0.2.0.zip
@@ -10,6 +9,7 @@
       log: http://github.com/steamcannon/steamcannon/commits/0.2.0
       tree: http://github.com/steamcannon/steamcannon/tree/0.2.0
     jira: https://jira.jboss.org/secure/IssueNavigator.jspa?reset=true&fixfor=12315364&pid=12311083&sorter/field=issuekey&sorter/order=DESC
+
 - version: 1.0.0.Beta1
   amis: 
     - ami_id: ami-2ebe4947
@@ -22,3 +22,4 @@
       log: http://github.com/steamcannon/steamcannon/commits/1.0.0.beta1
       tree: http://github.com/steamcannon/steamcannon/tree/1.0.0.beta1
     jira: https://jira.jboss.org/secure/IssueNavigator.jspa?reset=true&fixfor=12315363&pid=12311083&sorter/field=issuekey&sorter/order=DESC
+
