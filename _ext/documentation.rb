@@ -5,11 +5,12 @@ class Documentation
 
     site.releases.each do |release|
       doc_bundle_name = "steamcannon-docs-en_US-#{release.version}-html.zip"
-      doc_bundle_path = File.join(site.output_dir, 'documentation', 'download', doc_bundle_name)
+      doc_bundle_path = File.join(site.dir, 'documentation', 'download', doc_bundle_name)
       doc_root = File.join(site.output_dir, 'documentation', release.version)
 
       if File.exist?(doc_bundle_path)
         if release == site.releases.first
+          FileUtils.mkdir_p(File.join(site.output_dir, 'documentation'))
           FileUtils.cd(File.join(site.output_dir, 'documentation')) do |dir|
             FileUtils.ln_s(release.version, 'current')
           end
