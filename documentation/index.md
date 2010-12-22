@@ -3,15 +3,12 @@ layout: default
 title: Documentation
 ---
 
-# [Browse the #{latest_release.version} documentation][docs]
+# [Browse the #{latest_release.version} documentation][docs] or [Download as a PDF][pdf]
 
 [docs]: /documentation/#{latest_release.version}/
+[pdf]: /documentation/download/steamcannon-docs-en_US-#{latest_release.version}.pdf
 
-Starting with 0.2.0, documentation is versioned with each release of
-SteamCannon. The global documentation available below is deprecated
-and will be removed once all its contents have been moved to the new
-version-specific docs. Until then, it may still be useful.
-
-#{partial('documentation/overview.md')}
+In addition to our formal documentation, we've collected a few
+step-by-step getting started guides below.
 
 #{partial('documentation/getting_started.md')}
